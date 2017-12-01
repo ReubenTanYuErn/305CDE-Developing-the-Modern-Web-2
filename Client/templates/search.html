@@ -1,0 +1,21 @@
+<!--<p>{{ message }}</p>-->
+<h2>Search for your movie here!</h2>
+<p>
+	<input type="text" placeholder="Insert movie title" size="158" border-radius = "25px" ng-model="searchTerm" ng-keydown="search($event)" autofocus>
+</p>
+
+<table class = "movie-list" border = "1" cellspacing = "0" cellpadding = "10" align = "center" border-radius = "25px">
+	<tr>
+		<th colspan = "5"><b>Movie Title</b></th>
+		<th colspan = "5">Date of Release</th>
+		<th colspan = "5">Ratings</th>
+	</tr>
+
+  <tr ng-repeat="movie in movies">
+    <td  colspan = "5" data-th = "Movie Title"><a href="#detail/{{movie.id}}">{{movie.title}}</td>
+		<td  colspan = "5" data-th = "Date of Release">{{movie.release_date}}</td>
+		<td  colspan = "5" data-th = "Ratings">{{movie.vote_average}}</td>
+  </tr>
+</table>
+
+

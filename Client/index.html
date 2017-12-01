@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<title>The New Cinematics</title>
+	<meta charset="iso-8859-1">
+
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<script src="js/cinematic.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="css/layout.css" type="text/css">
+</head>
+
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <h1><a href="#">The New Cinematics</a></h1>
+      <h2>Your no.1 place for movie reviews</h2>
+    </div>
+
+    <nav>
+      <ul>
+      	<li><a href="https://cde305-reubentan.c9users.io/#/search">Search For Movies</a></li>
+        <li><a href="https://cde305-reubentan.c9users.io/#/new_releases">New Releases</a></li>
+        <li><a href="https://cde305-reubentan.c9users.io/#/top">Top Rated Movies</a></li>
+        <li class="last"><a href="https://cde305-reubentan.c9users.io/#/favourites">Favourites</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+
+    <!-- main content -->
+    <div id="intro">
+			<section class="clear">
+          <body ng-app="myApp">
+						<div ng-view>
+							<!-- this is where the content will be displayed... -->
+						</div>
+					</body>
+      </section>
+
+
+
+
+
+    </div>
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <div id="homepage" class="last clear">
+      <section class>
+
+        <h2 class="title">About US</h2>
+
+				<p>This is a movie review website. All moviews listed in this website are sourced from The Movie DB and their API protocols.<br>
+					The purpose of this website is to showcase the application of API. API or Application Programming Interface is a set of routes or protocols for building software applications.<br>
+						This website is prepared for the subject Developing The Modern Web 2.
+				</p>
+      </section>
+    </div>
+    <!-- / content body -->
+  </div>
+</div>
+<!-- Footer -->
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Developing The Modern Web 2</p>
+    <p class="fl_right">Project Prepared by Reuben Tan</p>
+  </footer>
+</div>
+</body>
+</html>

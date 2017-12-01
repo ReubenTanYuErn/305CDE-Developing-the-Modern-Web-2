@@ -1,0 +1,61 @@
+
+<table border = "1" cellspacing = "0" cellpadding = "10">
+
+	<tr>
+		<td colspan = "4">
+		<h1>{{ movie.title }} <button ng-click="addToFavourites(id, movie.title)" style="float: right;">Add to favourites</button></h1>
+
+		</td>
+	</tr>
+
+
+
+	<tr>
+		<td>Movie ID: {{id}}</td>
+		<td>Overview</td>
+		<td>Ratings</td>
+		<td>Release Date</td>
+	</tr>
+
+	<tr>
+		<td><img src = {{movie.poster_path}}></td>
+		<td>{{ movie.overview }}</td>
+		<td>{{ movie.vote_average }}</td>
+		<td>{{ movie.release_date }}</td>
+
+	</tr>
+
+	<tr>
+		<td colspan = "4"><iframe id="video" width="1000" height="515" ng-src="{{movie.videos}}" frameborder="0" allowfullscreen></iframe></td>
+	</tr>
+
+	<tr>
+		<td>Status</td>
+		<td>Genre</td>
+		<td>Movie Budget</td>
+		<td>Visit the website!</td>
+	</tr>
+
+	<tr>
+		<td>{{movie.status}}</td>
+		<td>{{movie.genres[0].name}}, {{movie.genres[1].name}}, {{movie.genres[2].name}}, {{movie.genres[3].name}}, {{movie.genres[4].name}}</td>
+		<td>{{movie.budget | currency}}</td>
+		<td><a href = {{movie.homepage}} target="_blank">Visit!</a></td>
+	</tr>
+
+</table>
+<br>
+<h2>Reviews</h2>
+<br>
+<h3>{{review.author}}</h3>
+<p>{{review.content}}</p>
+
+<h3>{{review.author2}}</h3>
+<p>{{review.content2}}</p>
+
+<h3>{{review.author3}}</h3>
+<p>{{review.content3}}</p>
+
+
+
+<!--<p><button  ng-click="addToFavourites(id, movie.title)">Add to Favourites</button></p>-->

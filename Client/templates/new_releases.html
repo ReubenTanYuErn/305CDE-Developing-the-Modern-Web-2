@@ -1,0 +1,18 @@
+<h1> {{message}} </h1>
+<br>
+
+<table border = "1" cellspacing = "0" cellpadding = "10" >
+		<tr>
+			<td>&nbsp</td>
+			<td>Movie Title</td>
+			<td>Release Date</td>
+		</tr>
+
+		<tr ng-repeat="movie in movies">
+			<td><img src = 'http://image.tmdb.org/t/p/w154/{{movie.poster_path}}' + ></td>
+			<td><a href="#detail/{{movie.id}}">{{movie.title}}</td>
+			<td>{{movie.release_date}}</td>
+		</tr>
+
+
+</table>
